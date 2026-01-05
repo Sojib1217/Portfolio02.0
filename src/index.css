@@ -1,0 +1,81 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Account for fixed navbar */
+}
+
+/* Enhanced smooth scrolling with custom timing */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3B82F6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1E1E1E;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3B82F6;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: max(884px, 100dvh);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.shape-semicircle-top {
+  border-radius: 100px 100px 0 0;
+}
+
+.shape-semicircle-bottom {
+  border-radius: 0 0 100px 100px;
+}
+
+.shape-semicircle-right {
+  border-radius: 0 100px 100px 0;
+}
+
+.shape-pacman {
+  clip-path: polygon(100% 0%, 100% 100%, 50% 50%, 0% 100%, 0% 0%);
+}
+
+.dashed-line-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
