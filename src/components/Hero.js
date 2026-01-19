@@ -109,7 +109,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="/profile.png"
+            src="https://i.ibb.co.com/NgTdTqgM/IMG-20220304-003139-1.jpg"
             alt="Sojib Hasan"
             className="w-full h-full object-cover"
           />
