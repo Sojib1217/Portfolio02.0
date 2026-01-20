@@ -19,8 +19,8 @@ const Projects = () => {
       description: "An Online Platform for students to learn programming languages with interactive lessons and quizzes.",
       image: "https://i.ibb.co.com/BKnpmQqV/Screenshot-2025-12-31-153745.png",
       technologies: ["React", "Firebase", "Tailwind CSS", "JavaScript"],
-      liveUrl: "https://resplendent-kheer-60608a.netlify.app/",
-      githubUrl: "https://omega-learn-client.web.app/",
+      liveUrl: "https://omega-learn-client.web.app/",
+      githubUrl: "https://github.com/Sojib1217/Omega-Learn-Client-Side.git",
       category: "Full Stack"
     },
     {
