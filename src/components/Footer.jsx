@@ -308,12 +308,12 @@ const Footer = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              <button href="#" className="text-gray-400 hover:text-primary transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+              </button>
+              <button href="#" className="text-gray-400 hover:text-primary transition-colors">
                 Terms of Service
-              </a>
+              </button>
             </motion.div>
           </div>
         </div>

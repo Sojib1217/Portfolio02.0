@@ -27,7 +27,7 @@ const WelcomeAnimation = ({ onComplete }) => {
     }, 800); // Time between each word
 
     return () => clearTimeout(timer);
-  }, [currentStep, onComplete]);
+  }, [currentStep, onComplete, steps.length]);
 
   const containerVariants = {
     initial: { opacity: 0 },

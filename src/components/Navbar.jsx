@@ -93,11 +93,11 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
         </motion.div>
         
         <div className="hidden md:flex gap-8 text-sm font-medium text-gray-600 dark:text-gray-300">
-          <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</a>
-          <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'about')}>About Me</a>
-          <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'skills')}>Skills</a>
-          <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'projects')}>Projects</a>
-          <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact</a>
+          <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</button>
+          <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'about')}>About Me</button>
+          <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'skills')}>Skills</button>
+          <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'projects')}>Projects</button>
+          <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact</button>
         </div>
         
         <div className="flex items-center gap-3">
@@ -167,11 +167,11 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
       {isMobileMenuOpen && (
         <div className="md:hidden mt-2 bg-surface-light dark:bg-surface-dark rounded-2xl p-4 shadow-soft dark:shadow-soft-dark border border-gray-100 dark:border-gray-800">
           <div className="flex flex-col gap-4 text-sm font-medium text-gray-600 dark:text-gray-300">
-            <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</a>
-            <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'about')}>About Me</a>
-            <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'skills')}>Skills</a>
-            <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'projects')}>Projects</a>
-            <a className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact</a>
+            <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'home')}>Home</button>
+            <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'about')}>About Me</button>
+            <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'skills')}>Skills</button>
+            <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'projects')}>Projects</button>
+            <button className="hover:text-primary transition-colors cursor-pointer" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contact</button>
             
             {/* Mobile Dark Mode Toggle */}
             <div className="flex items-center justify-between pt-2 border-t border-gray-200 dark:border-gray-700">
