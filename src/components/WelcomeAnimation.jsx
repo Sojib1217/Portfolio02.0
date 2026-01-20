@@ -31,7 +31,7 @@ const WelcomeAnimation = ({ onComplete }) => {
 
   const containerVariants = {
     initial: { opacity: 0 },
-    animate: { 
+    animate: {
       opacity: 1,
       transition: {
         duration: 0.5
@@ -48,13 +48,13 @@ const WelcomeAnimation = ({ onComplete }) => {
   };
 
   const textVariants = {
-    initial: { 
-      opacity: 0, 
+    initial: {
+      opacity: 0,
       y: 50,
       scale: 0.8
     },
-    animate: { 
-      opacity: 1, 
+    animate: {
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
@@ -65,13 +65,13 @@ const WelcomeAnimation = ({ onComplete }) => {
   };
 
   const logoVariants = {
-    initial: { 
-      opacity: 0, 
+    initial: {
+      opacity: 0,
       scale: 0.5,
       rotate: -180
     },
-    animate: { 
-      opacity: 1, 
+    animate: {
+      opacity: 1,
       scale: 1,
       rotate: 0,
       transition: {
@@ -83,11 +83,11 @@ const WelcomeAnimation = ({ onComplete }) => {
   };
 
   const circleVariants = {
-    initial: { 
+    initial: {
       scale: 0,
       opacity: 0
     },
-    animate: { 
+    animate: {
       scale: [0, 1.2, 1],
       opacity: [0, 0.8, 0.6],
       transition: {
@@ -180,11 +180,10 @@ const WelcomeAnimation = ({ onComplete }) => {
               {steps.map((step, index) => (
                 <motion.div
                   key={index}
-                  className={`text-4xl md:text-6xl font-bold ${
-                    index === 2 
-                      ? 'bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent' 
+                  className={`text-4xl md:text-6xl font-bold ${index === 2
+                      ? 'bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'
                       : 'text-gray-900 dark:text-white'
-                  }`}
+                    }`}
                   variants={textVariants}
                   initial="initial"
                   animate={currentStep >= index ? "animate" : "initial"}

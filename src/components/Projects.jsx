@@ -20,8 +20,8 @@ const Projects = () => {
       image: "https://i.ibb.co.com/BKnpmQqV/Screenshot-2025-12-31-153745.png",
       technologies: ["React", "Firebase", "Tailwind CSS", "JavaScript"],
       liveUrl: "https://resplendent-kheer-60608a.netlify.app/",
-      githubUrl: "https://github.com/Sojib1217/Omega-Learn-Client-Side.git",
-      category: "Frontend"
+      githubUrl: "https://omega-learn-client.web.app/",
+      category: "Full Stack"
     },
     {
       id: 3,
@@ -29,8 +29,8 @@ const Projects = () => {
       description: "An Online indoor Plant Selling platform and Home decoration with plants.",
       image: "https://i.ibb.co.com/ch82HxM7/Screenshot-2026-01-05-185619.png",
       technologies: ["React", "API", "Framer-Motion", "CSS5"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://incredible-malasada-f49244.netlify.app/",
+      githubUrl: "https://github.com/Sojib1217/GreenNest.git",
       category: "Frontend"
     }
   ];
@@ -69,8 +69,8 @@ const Projects = () => {
   };
 
   return (
-    <motion.section 
-      id="projects" 
+    <motion.section
+      id="projects"
       className="py-20 px-5 max-w-7xl mx-auto"
       initial="hidden"
       whileInView="visible"
@@ -107,7 +107,7 @@ const Projects = () => {
                 whileHover={{ scale: 1.1 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               {/* Category Badge */}
               <div className="absolute top-4 left-4">
                 <span className="bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -141,7 +141,7 @@ const Projects = () => {
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
-              
+
               <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">
                 {project.description}
               </p>
@@ -190,7 +190,7 @@ const Projects = () => {
       </div>
 
       {/* View All Projects Button */}
-      <motion.div 
+      <motion.div
         className="text-center mt-12"
         variants={itemVariants}
       >
